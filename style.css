@@ -1,1 +1,140 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  font-family: Rubik;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(270, 20%, 96%);
+}
+body .container .chat {
+  width: 250px;
+  border: 10px solid hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+body .container .chat .chat-head {
+  width: 100%;
+  height: 65px;
+  color: hsl(0, 0%, 100%);
+  background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 20px 20px 5px 5px;
+}
+body .container .chat .chat-head .chat-user-head {
+  display: flex;
+  justify-content: center;
+}
+body .container .chat .chat-head .chat-user-head .user-detail .user-name {
+  font-weight: 0.8rem;
+}
+body .container .chat .chat-body {
+  display: block;
+  padding: 10px;
+}
+body .container .chat .chat-body .chat-boxes {
+  width: 100%;
+  overflow: hidden;
+}
+body .container .chat .chat-body .chat-boxes .admin-chat-box {
+  color: hsl(276, 55%, 52%);
+  font-size: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 130px;
+  background-color: hsla(276, 100%, 81%, 0.294);
+  padding: 5px 10px;
+  margin-bottom: 8%;
+  border-radius: 10px 10px 10px 5px;
+  float: left;
+}
+body .container .chat .chat-body .chat-boxes .dog-images {
+  display: flex;
+  margin-bottom: 8px;
+  float: right;
+}
+body .container .chat .chat-body .chat-boxes .dog-images img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+body .container .chat .chat-body .chat-boxes .dog-images #second-img {
+  margin: 0 8px;
+}
+body .container .chat .chat-body .chat-boxes .user-chat-box {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 130px;
+  font-size: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px 10px 5px 10px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  float: right;
+}
+body .container .chat .chat-body .chat-boxes .offer-box {
+  width: 160px;
+  height: 30px;
+  border-radius: 10px 10px 10px 5px;
+  background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  padding: 10px 15px 10px 8px;
+  margin-bottom: 8px;
+  color: hsl(0, 0%, 100%);
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container .chat .chat-body .chat-boxes .offer-box .offer-detail {
+  display: flex;
+  align-items: center;
+}
+body .container .chat .chat-body .chat-boxes .offer-box .offer-detail .offer-check {
+  width: 12px;
+  height: 12px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 25px;
+  margin-right: 8px;
+}
+body .container .chat .chat-body .chat-boxes .offer-box .offer-detail .offer-name {
+  font-size: 0.5rem;
+}
+body .container .chat .chat-body .chat-boxes .offer-box .offer-price {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+body .container .chat .chat-body .chat-type-box {
+  width: 100%;
+  height: 35px;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 7px;
+  padding: 5px 5px 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container .chat .chat-body .chat-type-box p {
+  font-size: 0.5rem;
+  color: hsl(206, 6%, 79%);
+}
+body .container .chat .chat-body .chat-type-box .send {
+  width: 25px;
+  height: 25px;
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 50px;
+}
+
+@media (min-width: 375px) and (max-width: 1439px) {
+  body {
+    margin: 0 auto;
+  }
+  body .container {
+    width: 375px;
+    padding: 65px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */

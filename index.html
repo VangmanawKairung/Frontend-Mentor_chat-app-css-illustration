@@ -16,7 +16,21 @@
   <body>
     <div class="container">
       <div class="chat">
-        <div class="chat-head">Samuel Green Available to Walk</div>
+        <div class="chat-head">
+          <div class="chat-user-head">
+            <img
+              src="source/images/avatar.jpg"
+              alt="profile image"
+              width="25px"
+              height="25px"
+              style="border: 1px solid white; border-radius: 25px"
+            />
+            <div class="user-detail">
+              <div class="user-name">Samuel Green</div>
+              <div class="status">Available to Walk</div>
+            </div>
+          </div>
+        </div>
         <div class="chat-body">
           <div class="chat-boxes">
             <div class="admin-chat-box">
@@ -26,9 +40,21 @@
               Could you send over some pictures of your dog, please?
             </div>
             <div class="dog-images">
-              <img src="source/images/dog-image-1.jpg" alt="First dog image" />
-              <img src="source/images/dog-image-2.jpg" alt="Second dog image" />
-              <img src="source/images/dog-image-3.jpg" alt="Third dog image" />
+              <img
+                src="source/images/dog-image-1.jpg"
+                alt="First dog image"
+                id="first-img"
+              />
+              <img
+                src="source/images/dog-image-2.jpg"
+                alt="Second dog image"
+                id="second-img"
+              />
+              <img
+                src="source/images/dog-image-3.jpg"
+                alt="Third dog image"
+                id="third-img"
+              />
             </div>
             <div class="user-chat-box">
               Here are a few pictures. She’s a happy girl!
@@ -39,15 +65,24 @@
               take her out for?
             </div>
             <div class="offer-box">
-              <div class="offer-name">30 minute walk</div>
+              <div class="offer-detail">
+                <div class="offer-check"></div>
+                <div class="offer-name">30 minute walk</div>
+              </div>
               <div class="offer-price">$29</div>
             </div>
             <div class="offer-box">
-              <div class="offer-name">1 hour walk</div>
+              <div class="offer-detail">
+                <div class="offer-check"></div>
+                <div class="offer-name">1 hour walk</div>
+              </div>
               <div class="offer-price">$49</div>
             </div>
           </div>
-          <div class="chat-type-box">Type a message…</div>
+          <div class="chat-type-box">
+            <p>Type a message…</p>
+            <div class="send"></div>
+          </div>
         </div>
       </div>
       <div class="web-info">
