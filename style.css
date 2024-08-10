@@ -12,8 +12,12 @@ body {
 }
 body .container .chat {
   width: 250px;
+  height: -moz-fit-content;
+  height: fit-content;
   border: 10px solid hsl(0, 0%, 100%);
   border-radius: 30px;
+  background-color: hsl(270, 20%, 96%);
+  box-shadow: 0px 40px 40px rgba(200, 200, 200, 0.468);
 }
 body .container .chat .chat-head {
   width: 100%;
@@ -23,15 +27,57 @@ body .container .chat .chat-head {
   border-radius: 20px 20px 5px 5px;
 }
 body .container .chat .chat-head .chat-user-head {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 14px 11px 14px;
 }
-body .container .chat .chat-head .chat-user-head .user-detail .user-name {
-  font-weight: 0.8rem;
+body .container .chat .chat-head .chat-user-head .left-side-head {
+  display: flex;
+  align-items: center;
+}
+body .container .chat .chat-head .chat-user-head .left-side-head .back-arrow span {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+body .container .chat .chat-head .chat-user-head .left-side-head img {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px solid hsl(0, 0%, 100%);
+  margin: 0 8px 0 3px;
+}
+body .container .chat .chat-head .chat-user-head .left-side-head .user-detail .user-name {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+body .container .chat .chat-head .chat-user-head .left-side-head .user-detail .status {
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: hsl(276, 100%, 81%);
+}
+body .container .chat .chat-head .chat-user-head .right-side-head span {
+  font-size: 0.9rem;
+}
+body .container .chat .chat-head::before {
+  content: "";
+  width: 130px;
+  height: 30px;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  translate: 40% -34%;
+  border-radius: 14px;
 }
 body .container .chat .chat-body {
-  display: block;
+  height: calc(100% - 65px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 0 0 20px 20px;
 }
 body .container .chat .chat-body .chat-boxes {
   width: 100%;
@@ -43,14 +89,15 @@ body .container .chat .chat-body .chat-boxes .admin-chat-box {
   width: -moz-fit-content;
   width: fit-content;
   max-width: 130px;
-  background-color: hsla(276, 100%, 81%, 0.294);
+  background-color: hsla(275, 67%, 82%, 0.294);
   padding: 5px 10px;
-  margin-bottom: 8%;
+  margin-bottom: 8px;
   border-radius: 10px 10px 10px 5px;
   float: left;
 }
 body .container .chat .chat-body .chat-boxes .dog-images {
   display: flex;
+  margin-top: 7px;
   margin-bottom: 8px;
   float: right;
 }
@@ -72,6 +119,11 @@ body .container .chat .chat-body .chat-boxes .user-chat-box {
   padding: 5px 10px;
   margin-bottom: 8px;
   float: right;
+  color: hsl(271, 15%, 43%);
+  box-shadow: -3px 5px 3px rgba(160, 160, 160, 0.073);
+}
+body .container .chat .chat-body .chat-boxes #last-user-box {
+  margin-bottom: 15px;
 }
 body .container .chat .chat-body .chat-boxes .offer-box {
   width: 160px;
@@ -124,6 +176,35 @@ body .container .chat .chat-body .chat-type-box .send {
   height: 25px;
   background-color: hsl(271, 36%, 24%);
   border-radius: 50px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .chat .chat-body .chat-type-box .send span {
+  margin-left: 3px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+body .container .web-info h1 {
+  color: hsl(271, 36%, 24%);
+}
+body .container .web-info p {
+  color: hsl(270, 7%, 64%);
+}
+body .container::before {
+  content: "";
+  width: 500px;
+  height: 1000px;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 250px;
+}
+body .container::after {
+  content: "";
+  width: 500px;
+  height: 1000px;
+  background-color: rgb(242, 236, 243);
+  border-radius: 250px;
 }
 
 @media (min-width: 375px) and (max-width: 1439px) {
@@ -137,4 +218,10 @@ body .container .chat .chat-body .chat-type-box .send {
     flex-direction: column;
     align-items: center;
   }
-}/*# sourceMappingURL=style.css.map */
+  body .container::before {
+    z-index: -100;
+    position: absolute;
+    top: -80%;
+    left: -84%;
+  }
+}
