@@ -224,4 +224,10 @@ body .container::after {
     top: -80%;
     left: -84%;
   }
-}
+  body .container::after {
+    z-index: -100;
+    position: absolute;
+    bottom: -90%;
+    right: -84%;
+  }
+}/*# sourceMappingURL=style.css.map */

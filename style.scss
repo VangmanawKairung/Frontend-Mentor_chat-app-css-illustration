@@ -294,5 +294,12 @@ body {
       top: -80%;
       left: -84%;
     }
+
+    .container::after {
+      z-index: -100;
+      position: absolute;
+      bottom: -90%;
+      right: -84%;
+    }
   }
 }
