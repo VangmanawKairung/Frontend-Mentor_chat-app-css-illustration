@@ -223,6 +223,7 @@ body .container::after {
     padding: 65px 30px;
     position: relative;
     overflow: hidden;
+    margin: auto;
   }
   body .container .chat {
     margin: 0 auto 70px auto;
