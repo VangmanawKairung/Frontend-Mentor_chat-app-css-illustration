@@ -292,7 +292,7 @@ body {
       width: 375px;
       height: fit-content;
 
-      margin: 0 auto;
+      margin: auto;
       padding: 65px 30px;
 
       position: relative;
@@ -330,6 +330,7 @@ body {
       position: relative;
       display: grid;
       grid-template-columns: repeat(2, auto);
+      margin: auto;
 
       .chat {
         margin-right: 125px;
