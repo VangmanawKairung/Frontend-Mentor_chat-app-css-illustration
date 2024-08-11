@@ -9,10 +9,6 @@
 
 body {
   background-color: hsl(270, 20%, 96%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
 }
 body .container .chat {
   width: 247px;
@@ -252,6 +248,8 @@ body .container::after {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    margin: auto;
+    transform: translate(-50% -50%);
   }
   body .container .chat {
     margin-right: 125px;
@@ -270,4 +268,4 @@ body .container::after {
     bottom: -42%;
     right: -12%;
   }
-}
+}/*# sourceMappingURL=style.css.map */
