@@ -4,7 +4,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 
 ## Table of contents
 
-- [Frontend Mentor - Single price grid component solution](#frontend-mentor---single-price-grid-component-solution)
+- [Frontend Mentor - Chat app CSS illustration solution](#frontend-mentor---chat-app-css-illustration-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -13,7 +13,6 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
@@ -24,22 +23,23 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 
 - The grid component
 - Responsive website
+- Background element
 
 ### Screenshot
 
 <details>
 <summary><strong>Mobile View</strong></summary>
-<img src="./result/mobile view.png">
+<img src="source/result/mobile.png">
 </details>
 <details>
 <summary><strong>Descktop View</strong></summary>
-<img src="./result/desktop view.png">
+<img src="source/result/desktop.png">
 </details>
 
 ### Links
 
-- Solution URL: [Single price grid component by HTML and CSS (Sass)](https://www.frontendmentor.io/solutions/single-price-grid-component-by-html-and-css-sass-lko1qj6JDz)
-- Live Site URL: [Social proof section](https://vangmanawkairung.github.io/social-proof-section/)
+- Solution URL: [Chat app CSS illustration with Sass](https://www.frontendmentor.io/solutions/chat-app-css-illustration-with-sass-g0dxwl8AHp)
+- Live Site URL: [Frontend-Mentor_chat-app-css-illustration](https://vangmanawkairung.github.io/Frontend-Mentor_chat-app-css-illustration/)
 
 ## My process
 
@@ -53,11 +53,9 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 
 ### What I learned
 
-- The border radius of grid container have to be set by applying border radius in the border elements
+- The position for the element that used ::before and ::after should use 'relative' while ::before and ::after should be 'absolute'.
+- You can used 'float' property to align object.
 
-### Continued development
-
-Since the given design doesn't provide the hover state, so the future work will be handling with the hover state or active state to make the website more responsive.
 
 ### Useful resources
 
