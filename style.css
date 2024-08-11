@@ -9,6 +9,10 @@
 
 body {
   background-color: hsl(270, 20%, 96%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }
 body .container .chat {
   width: 247px;
@@ -220,7 +224,6 @@ body .container::after {
     width: 375px;
     height: -moz-fit-content;
     height: fit-content;
-    margin: auto;
     padding: 65px 30px;
     position: relative;
     overflow: hidden;
@@ -249,7 +252,6 @@ body .container::after {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    margin: auto;
   }
   body .container .chat {
     margin-right: 125px;

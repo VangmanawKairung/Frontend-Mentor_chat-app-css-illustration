@@ -40,7 +40,10 @@ $root-font-size: 16px;
 
 body {
   background-color: $light-grayish-violet;
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
   .container {
     .chat {
       width: 247px;
@@ -291,8 +294,6 @@ body {
     .container {
       width: 375px;
       height: fit-content;
-
-      margin: auto;
       padding: 65px 30px;
 
       position: relative;
@@ -330,7 +331,6 @@ body {
       position: relative;
       display: grid;
       grid-template-columns: repeat(2, auto);
-      margin: auto;
 
       .chat {
         margin-right: 125px;
