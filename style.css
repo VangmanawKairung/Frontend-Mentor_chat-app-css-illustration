@@ -11,13 +11,12 @@ body {
   background-color: hsl(270, 20%, 96%);
 }
 body .container .chat {
-  width: 250px;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 247px;
+  height: 480px;
   border: 10px solid hsl(0, 0%, 100%);
   border-radius: 30px;
   background-color: hsl(270, 20%, 96%);
-  box-shadow: 0px 40px 40px rgba(200, 200, 200, 0.468);
+  box-shadow: 0px 40px 40px rgba(200, 200, 200, 0.48);
 }
 body .container .chat .chat-head {
   width: 100%;
@@ -68,7 +67,7 @@ body .container .chat .chat-head::before {
   background-color: hsl(0, 0%, 100%);
   position: absolute;
   translate: 40% -34%;
-  border-radius: 14px;
+  border-radius: 0 0 14px 14px;
 }
 body .container .chat .chat-body {
   height: calc(100% - 65px);
@@ -91,14 +90,14 @@ body .container .chat .chat-body .chat-boxes .admin-chat-box {
   max-width: 130px;
   background-color: hsla(275, 67%, 82%, 0.294);
   padding: 5px 10px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   border-radius: 10px 10px 10px 5px;
   float: left;
 }
 body .container .chat .chat-body .chat-boxes .dog-images {
   display: flex;
-  margin-top: 7px;
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   float: right;
 }
 body .container .chat .chat-body .chat-boxes .dog-images img {
@@ -117,7 +116,7 @@ body .container .chat .chat-body .chat-boxes .user-chat-box {
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px 10px 5px 10px;
   padding: 5px 10px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   float: right;
   color: hsl(271, 15%, 43%);
   box-shadow: -3px 5px 3px rgba(160, 160, 160, 0.073);
@@ -131,7 +130,7 @@ body .container .chat .chat-body .chat-boxes .offer-box {
   border-radius: 10px 10px 10px 5px;
   background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   padding: 10px 15px 10px 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: hsl(0, 0%, 100%);
   float: left;
   display: flex;
@@ -188,46 +187,84 @@ body .container .chat .chat-body .chat-type-box .send span {
 }
 body .container .web-info h1 {
   color: hsl(271, 36%, 24%);
+  font-size: 2.3rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
 }
 body .container .web-info p {
   color: hsl(270, 7%, 64%);
+  line-height: 1.6rem;
 }
 body .container::before {
   content: "";
   width: 500px;
   height: 1000px;
   background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-  border-radius: 250px;
+  border-radius: 0 0 250px 250px;
+  position: absolute;
+  z-index: -1;
 }
 body .container::after {
   content: "";
   width: 500px;
   height: 1000px;
   background-color: rgb(242, 236, 243);
-  border-radius: 250px;
+  border-radius: 250px 250px 0 0;
+  position: absolute;
+  z-index: -1;
 }
 
 @media (min-width: 375px) and (max-width: 1439px) {
-  body {
-    margin: 0 auto;
-  }
   body .container {
     width: 375px;
-    padding: 65px 35px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 65px 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  body .container .chat {
+    margin: 0 auto 70px auto;
+  }
+  body .container .web-info {
+    text-align: center;
   }
   body .container::before {
-    z-index: -100;
-    position: absolute;
-    top: -80%;
-    left: -84%;
+    top: -62%;
+    left: -85%;
   }
   body .container::after {
-    z-index: -100;
-    position: absolute;
-    bottom: -90%;
-    right: -84%;
+    bottom: -60%;
+    right: -90%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+@media (min-width: 1440px) {
+  body .container {
+    width: 1440px;
+    height: 800px;
+    padding: 145px 260px 145px 360px;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  body .container .chat {
+    margin-right: 125px;
+  }
+  body .container .web-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  body .container::before {
+    top: -42%;
+    left: -5%;
+  }
+  body .container::after {
+    bottom: -42%;
+    right: -12%;
+  }
+}

@@ -43,13 +43,13 @@ body {
 
   .container {
     .chat {
-      width: 250px;
-      height: fit-content;
+      width: 247px;
+      height: 480px;
       border: 10px solid $white;
       border-radius: 30px;
       background-color: $light-grayish-violet;
 
-      box-shadow: 0px 40px 40px rgba(200, 200, 200, 0.468);
+      box-shadow: 0px 40px 40px rgba(200, 200, 200, 0.48);
       .chat-head {
         width: 100%;
         height: 65px;
@@ -114,7 +114,7 @@ body {
         position: absolute;
         translate: 40% -34%;
 
-        border-radius: 14px;
+        border-radius: 0 0 14px 14px;
       }
 
       .chat-body {
@@ -138,15 +138,15 @@ body {
             max-width: 130px;
             background-color: $left-chat-background;
             padding: 5px 10px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             border-radius: 10px 10px 10px 5px;
             float: left;
           }
 
           .dog-images {
             display: flex;
-            margin-top: 7px;
-            margin-bottom: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             float: right;
             img {
               width: 40px;
@@ -166,7 +166,7 @@ body {
             background-color: $white;
             border-radius: 10px 10px 5px 10px;
             padding: 5px 10px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             float: right;
             color: $desaturated-dark-violet;
             box-shadow: -3px 5px 3px rgba(160, 160, 160, 0.073);
@@ -182,7 +182,7 @@ body {
             border-radius: 10px 10px 10px 5px;
             background: linear-gradient(90deg, $light-magenta, $light-violet);
             padding: 10px 15px 10px 8px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             color: $white;
 
             float: left;
@@ -253,9 +253,14 @@ body {
     .web-info {
       h1 {
         color: $very-dark-desaturated-violet;
+        font-size: 2.3rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        margin-bottom: 30px;
       }
       p {
         color: $dark-grayish-violet;
+        line-height: 1.6rem;
       }
     }
   }
@@ -265,7 +270,9 @@ body {
     width: 500px;
     height: 1000px;
     background: linear-gradient($light-magenta, $light-violet);
-    border-radius: 250px;
+    border-radius: 0 0 250px 250px;
+    position: absolute;
+    z-index: -1;
   }
 
   .container::after {
@@ -273,33 +280,77 @@ body {
     width: 500px;
     height: 1000px;
     background-color: rgb(242, 236, 243);
-    border-radius: 250px;
+    border-radius: 250px 250px 0 0;
+    position: absolute;
+    z-index: -1;
   }
 }
 
 @media (min-width: 375px) and (max-width: 1439px) {
   body {
-    margin: 0 auto;
     .container {
       width: 375px;
-      padding: 65px 35px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      height: fit-content;
+
+      margin: 0 auto;
+      padding: 65px 30px;
+
+      position: relative;
+      overflow: hidden;
+
+      .chat {
+        margin: 0 auto 70px auto;
+      }
+
+      .web-info {
+        text-align: center;
+      }
     }
 
     .container::before {
-      z-index: -100;
-      position: absolute;
-      top: -80%;
-      left: -84%;
+      top: -62%;
+      left: -85%;
     }
 
     .container::after {
-      z-index: -100;
-      position: absolute;
-      bottom: -90%;
-      right: -84%;
+      bottom: -60%;
+      right: -90%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    .container {
+      width: 1440px;
+      height: 800px;
+      padding: 145px 260px 145px 360px;
+      overflow: hidden;
+
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+
+      .chat {
+        margin-right: 125px;
+      }
+
+      .web-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+      }
+    }
+
+    .container::before {
+      top: -42%;
+      left: -5%;
+    }
+
+    .container::after {
+      bottom: -42%;
+      right: -12%;
     }
   }
 }
