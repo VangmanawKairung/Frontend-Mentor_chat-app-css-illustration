@@ -39,7 +39,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 ### Links
 
 - Solution URL: [Chat app CSS illustration with Sass](https://www.frontendmentor.io/solutions/chat-app-css-illustration-with-sass-g0dxwl8AHp)
-- Live Site URL: [Frontend-Mentor_chat-app-css-illustration](https://vangmanawkairung.github.io/Frontend-Mentor_chat-app-css-illustration/)
+- Live Site URL: [Frontend Mentor | Chat App CSS Illustration](https://vangmanawkairung.github.io/Frontend-Mentor_chat-app-css-illustration/)
 
 ## My process
 
